@@ -1,4 +1,4 @@
-import Counter from 0x06
+import "MeuContador"
 
 transaction {
     prepare(signer: &Account) {
@@ -7,6 +7,6 @@ transaction {
 
     execute {
         // Chama a função do contrato para incrementar o contador
-        Counter.increment()
+        MeuContador.increment()
     }
 }
